@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, intial-scale=1.0">
+    <title>ISC Shoreline</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="iscimages/logoisc.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="department.html">Our team</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="contact.html" class="hero-btn">Contact</a></li>
+                    <li class="social-icons">
+                        <a href="https://www.instagram.com/iscshoreline" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@iscshoreline" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+        </nav>
+        
+     <div class="text-box">
+         <h1>INDONESIAN STUDENT COMMUNITY</h1>
+         <p>Indonesian Students at Shoreline Community College.</p>
+     </div>   
+        
+    </section>
+    
+    <!------ events ------>
+    <section class="events">
+        <h1>EVENTS</h1>
+        <p>Check out a few of our events!</p>
+        
+        <div class="row">
+            <p></p>
+            <div class="events-col"> 
+                <a href="kopaja.html">
+                <h3>Upcoming event:</h3>
+                <h3>Kopaja</h3>
+                <p>Our annual sports event is back! Kopaja is coming sooner than you think, register now to compete!</p>
+                </a>
+            </div>
+            <div class="events-col">
+                <a href="leavenworth.html">
+                <h3>Roadtrip to Leavenworth</h3>
+                <p>Amidst our busy winter quarter, the ISC officers head out for a weekend of fun, relaxation, and bonding as we took a trip to Leavenworth.</p>
+                </a>
+            </div>
+            <div class="events-col">
+                <a href="giftexchange.html">
+                <h3>Christmas Gift Exchange</h3>
+                <p>The ISC officers gathered up, exchanged gifts and laughters, and played some games! Take a peek into the fun that we had.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!------ message ------>
+    <section class="message"> 
+        <h1>Message</h1>
+        <p>Hear from our president and vice president!</p>
+        
+        <div class="row">
+            <div class="message-col">
+                <a href="president.html">
+                <img src="iscimages/president.JPG">
+                <div class="layer">
+                    <h3>President</h3>
+                </div>
+                </a>
+            </div>
+            <div class="message-col">
+                <a href="vp.html">
+                <img src="iscimages/vp.JPG">
+                <div class="layer">
+                    <h3>Vice President</h3>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!------ Memories ------>
+    <section class="memories">
+        <h1>ISC throughout the year!</h1>
+        
+        <div class="row">
+            <div class="memories-col">
+                <video width="960" height="540" controls>
+                    <source src="iscvids/nasbab.mp4" type="video/mp4">
+                </video>
+                <h3>Fundraising</h3>
+                <p>Did you enjoy our nasi babi? or maybe our cincau? Peek into what goes on behind the scenes as we prepare your food!</p>
+            </div>
+            <div class="memories-col">
+                <video width="960" height="540" controls>
+                    <source src="iscvids/giftexchange.mp4" type="video/mp4">
+                </video>
+                <h3>Merry Christmas!</h3>
+                <p>After the winter break, our officers gathered up and had a gift exchange! Safe to say, there were a lot of happy faces that evening.</p>
+            </div>
+        </div>
+    
+    </section>
+ 
+    <!------ footer ------>
+    <section class="footer">
+        <h4>Indonesian Student Community</h4>
+        <p>Shoreline Community College</p>
+        <p>16101 Greenwood Ave N, Shoreline, WA 98133</p>
+    </section>
+    
+<!-----------JavaScript for Toggle Menu-------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>   
+    
+    
+</body>
+</html>
